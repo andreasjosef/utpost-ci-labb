@@ -3,6 +3,8 @@ import { ref, computed, onMounted } from 'vue'
 import { get } from '../api.js'
 import GuideCard from '../components/GuideCard.vue'
 
+const unused = 1
+
 const guides = ref([])
 const query = ref('')
 const loading = ref(true)
@@ -56,17 +58,20 @@ const visible = computed(() => {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 16px;
 }
+
 .searchrow {
   display: flex;
   gap: 8px;
   align-items: center;
   margin: 16px 0;
 }
+
 .searchrow input {
   flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
 }
+
 .muted {
   color: #777;
   font-size: 14px;
