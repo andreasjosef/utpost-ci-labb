@@ -1,7 +1,7 @@
 // Röktest: sviten får vara ett enda test den här veckan (M1). Det ska bevisa att
 // pipelinen kör tester – inte att appen är korrekt. Riktiga tester kommer i M2.
 import { describe, it, expect, vi } from 'vitest'
-import { mount, flushPromises } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import GuidesView from './GuidesView.vue'
 
 vi.mock('../api.js', () => ({
