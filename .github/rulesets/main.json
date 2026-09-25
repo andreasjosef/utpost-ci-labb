@@ -26,7 +26,7 @@
         "strict_required_status_checks_policy": true,
         "required_status_checks": [
           { "context": "Kvalitetsjobbet" },
-          { "context": "Bygg" }
+          { "context": "Build" }
         ]
       }
     },
